@@ -1,0 +1,58 @@
+page-special-openings-modal {
+
+    .specialCon {
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        background-color: white;
+    }
+
+    .specialCon div {
+        margin: 20px 0px;
+    }
+
+    .specialCon div:last-of-type {
+        margin-bottom: 5px;
+    }
+
+    .specialCon div:last-of-type h4 {
+        margin-bottom: 0px;
+    }
+
+    .specialInfo {
+        border-bottom: 1px solid black;
+    }
+
+    .specialCon h4 {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+        margin-bottom: 15px;
+        margin-top: 25px!important;
+    }
+
+    .specialCon h3 {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+        margin-top: 25px!important;
+    }
+
+    ion-grid {
+        padding: 0px!important;
+    }
+
+    ion-col:last-of-type {
+        text-align: center;
+    }
+
+    ion-row {
+        border-bottom: 1px solid black;
+        padding: 0px!important;
+        min-height: 80px;
+    }
+}

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-menu-button color="light" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Brick Finder</ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-searchbar [(ngModel)]="searchTerm" (search)="getItems($event)"></ion-searchbar>
+</ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-padding">
+
+  <div ion-fixed class="fixed-header" #fixedContentContainer>
+      <ion-row id="brickHeader" align-items-center>
+          <ion-col size="6">
+              Name
+          </ion-col>
+          <ion-col size="6">
+              Section
+          </ion-col>
+      </ion-row>
+  </div>
+
+<ion-grid *ngIf="filterData && filterData.length > 0">
+  <ion-row class="outerRow">
+      <ion-col class="outerCol">
+          <ion-row *ngFor="let item of filterData | orderNames" (click)="soldierClicked(item)">
+              <ion-col size="6">
+                  {{ item.name }}
+              </ion-col>
+  
+              <ion-col size="6">
+                  {{ item.section }}
+              </ion-col>
+          </ion-row>
+      </ion-col>
+  </ion-row>
+  
+</ion-grid>
+
+</ion-content>

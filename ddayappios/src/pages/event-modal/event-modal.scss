@@ -1,0 +1,51 @@
+page-event-modal {
+
+    @media (min-width: 768px) and (min-height: 768px) {
+        .grid {
+            padding: 10px;
+        }
+        .grid h2 {
+            font-size: 3.2rem!important;
+        }
+
+        .grid p {
+            font-size: 2.7rem!important;
+        }
+
+        .calBtn button {
+            font-size: 2.7rem!important;
+        }
+    }
+
+    ion-grid ion-row {
+        text-align: center;
+    }
+
+    ion-grid {
+        background-color: rgba(255, 255, 255, 0.95);
+        height: auto!important;
+    }
+
+    .titleRow {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .scroll-content {
+        background-color: white;
+    }
+
+    .calBtn button {
+        font-size: 1.4em;
+    }
+
+    .grid p {
+        padding: 10px 20px;
+        text-align: left;
+        line-height: 1.5;
+        color: #000;
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin: 0px;
+    }
+}

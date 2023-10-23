@@ -1,0 +1,106 @@
+page-info {
+    @media (min-width: 768px) and (min-height: 768px) {
+
+        ion-grid {
+            height: 100%!important;
+        }
+
+        ion-row {
+            height: calc(100%/6)!important;
+        }
+
+        ion-col div {
+            height: 100%!important;
+        }
+
+        ion-col div h2 {
+            font-size: 3.4rem!important;
+        }
+    }
+    
+    ion-grid {
+        padding: 0px!important;
+    }
+
+    ion-row {
+        padding: 0px!important;
+    }
+
+    ion-col {
+        padding: 0px!important;
+    }
+
+    ion-col div {
+        height: 150px;
+        text-align: center;
+    }
+
+    #genInfo {
+        background: url('https://www.dday.org/wp-content/uploads/2018/05/default-banner2.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #welcome {
+        background: url('https://www.dday.org/wp-content/uploads/2017/02/identification-project.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #bedfordBoys {
+        background: url('https://www.dday.org/wp-content/uploads/2017/02/volunteer-actual.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #ddayToday {
+        background: url('https://www.dday.org/wp-content/uploads/2017/02/field-trip.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #whileAtMemorial {
+        background: url('https://www.dday.org/wp-content/uploads/2017/03/tourism.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #support {
+        background: url('https://www.dday.org/wp-content/uploads/2017/03/luminary2.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #genInfo div {
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+
+    #welcome div {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    #bedfordBoys div {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    #ddayToday div {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    #whileAtMemorial div {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    #support div {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+        margin-top: 0px;
+        color: white!important;
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        top: 40%;
+        width: 100%;
+        z-index: 20;
+    }
+
+    h2 span {
+        border-radius: 25%;
+    }
+}

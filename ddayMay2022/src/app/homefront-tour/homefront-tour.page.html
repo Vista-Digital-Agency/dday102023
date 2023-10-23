@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button color="light" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Homefront Tour</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid id="homefrontGrid">
+    <ion-row>
+      <ion-col>
+        <img src="./assets/imgs/homefrontTitle.jpg" />
+        <img src="./assets/imgs/homefront.jpg" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <ion-button expand="full" (click)="openTour()">Homefront Tour Site: with GPS</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+          <ion-button expand="full" [routerLink]="['/homefront-tour-slides']">Homefront Tour: slides in app</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

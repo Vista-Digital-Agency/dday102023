@@ -1,0 +1,195 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>FAQ & Policies</ion-title>
+  </ion-navbar>
+
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="section" color="light">
+      <ion-segment-button value="faq">
+        FAQ
+      </ion-segment-button>
+      <ion-segment-button value="policies">
+        POLICIES
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div [ngSwitch]="section" class="pageCon">
+      
+    <div *ngSwitchCase="'faq'">
+
+      <div class="faqCon" padding>
+        <ngb-accordion [closeOthers]="true">
+          <ngb-panel id="static-1" title="WHEN IS THE NATIONAL D-DAY MEMORIAL OPEN?">
+            <ng-template ngbPanelContent>
+
+                The National D-Day Memorial is open daily from 10:00 AM to 5:00 PM with the exception of Monday closings December through February. 
+                The Memorial is closed on Thanksgiving Day, Christmas Eve, Christmas Day, and New Year’s Day. The Memorial closes at noon on New Year’s Eve. 
+                During inclement weather, we advise you call before planning your trip. The Memorial site phone number is 540-587-3619.
+
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel id="static-2" title="WHAT DOES IT COST TO GET IN?">
+            <ng-template ngbPanelContent>
+              
+              <ul>
+                <!-- <li>
+                  Fees for admission are $10.00 per adult, $8.00 per veteran or active duty military, and $6.00 per student (ages 6-18 or older with a valid college ID). Children under age 6 are admitted free.
+                </li>
+                <li>
+                  A complimentary guided walking tour is included in the cost of admission. Check with ticketing agent for next available tour time.
+                </li>
+                <li>
+                  Use of shuttle carts bears an additional fee and use is limited to those who are disabled.  Shuttle carts are not  always available, however, wheelchairs are available for free on a first-come first-serve basis.
+                </li>
+                <li>
+                  Ticket purchases and reserved group tour check-in occurs at the Bedford Area Welcome Center (located at the foot of the Memorial, 816 Burks Hill Rd., Bedford, VA 24523). Please stop here BEFORE driving up to the Memorial site.
+                </li> -->
+                <li>
+                  Adult – $12 at Memorial/$10 online
+                </li>
+                <li>
+                  Veteran/Active Duty Military – $10 at Memorial/$8 online
+                </li>
+                <li>
+                  Student – $8 at Memorial/$6 online Ages 6 – 18 or older with college ID
+                </li>
+                <li>
+                  Under 6 – FREE
+                </li>
+                <li>
+                  Thomas Jefferson’s Poplar Forest Combo Ticket – $20
+                </li>
+                <li>
+                  Includes admission and tour at both sites. $8 – $10 discount over regular price. Cannot be combined with group tour discount. Valid for one year from date of purchase. Sites may be visited on separate dates.
+                </li>
+              </ul>
+
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel id="static-3" title="I AM NOT TRAVELING WITH A GROUP BUT WOULD LIKE A GUIDED TOUR OF THE MEMORIAL. WHAT DO I DO?">
+            <ng-template ngbPanelContent>
+              
+              The Memorial has guided walking tours scheduled throughout the day, between the hours of 10 AM – 4 PM.  Check with the ticketing agent for the next available tour time.<!-- when you arrive at the Welcome Center to purchase tickets.-->
+
+            </ng-template>
+          </ngb-panel>
+          <!--<ngb-panel id="static-4" title="IF I AM A MEMBER OF THE NATIONAL D-DAY MEMORIAL, DO I STILL NEED TO CHECK IN AT THE WELCOME CENTER?">
+            <ng-template ngbPanelContent>
+              
+              Yes. Please come by the Welcome Center first to receive your admission sticker and to find out about tour times if you wish to take a guided walking tour of the Memorial. By checking in at the Welcome Center first, you will also receive a site map and we can pass along important information regarding any special activities happening on site that day.
+
+            </ng-template>
+          </ngb-panel>-->
+          <ngb-panel id="static-5" title="WHEN IS THE BEST TIME TO PLAN MY VISIT?">
+            <ng-template ngbPanelContent>
+              
+              April through October is a favorable time to visit the Memorial. The temperatures are warmer, the water effects are operating, and many of the gardens are in bloom. If you visit during the winter months, please call ahead as the Memorial may be closed due to inclement weather or seasonal systems maintenance.  The site number is 540-587-3619.
+
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel id="static-6" title="HOW MUCH TIME SHOULD I ALLOW FOR MY VISIT TO THE MEMORIAL?">
+            <ng-template ngbPanelContent>
+              
+              The guided walking tour of the Memorial takes approximately one hour, however, we recommend that you plan two hours for your visit. You may wish to walk around on your own, take photos, or visit the Memorial store for a souvenir.
+
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel id="static-7" title="WHAT DO WE DO IF IT’S RAINING?">
+            <ng-template ngbPanelContent>
+              
+              The National D-Day Memorial is an outdoor experience, so if it is raining, please bring an umbrella, poncho, or other appropriate rain gear.  Because the Memorial is an outdoor facility, remind your guests to consult weather forecasts in deciding on warm, wet, or cool weather attire. Sunglasses, sunscreen, and hats are recommended during sunny weather.
+
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel id="static-8" title="WHAT IF I AM TRAVELING WITH A PET?">
+            <ng-template ngbPanelContent>
+              
+              <div>
+                Please be advised that, in general, the central aspect of the Memorial is off limits to pets and animals of any kind. The central part of the Memorial encompasses the sidewalks and all the grounds interior to the circular parking lot. There is occasion, however, when a service animal or other authorized animal may need to be on the site with the patron. We do not limit the access of these service animals.
+              </div>
+
+              <div>
+                For those traveling with pets, we ask that you consider the welfare of your pet when you travel to our site. Some of you may opt to keep your pet in your personal vehicle in a cool place with adequate water. For your convenience, we do have a limited number of animal crates available in our shaded kennel area. Please let the ticketing attendant know about your particular circumstance so that they may be able to check on availability of the crates for your visit. All patrons who have animals on site need to have them on a leash. Please ask site staff where you may walk your pet.
+              </div>
+
+            </ng-template>
+          </ngb-panel>
+          <ngb-panel id="static-9" title="DO YOU HAVE ANY MOBILITY ASSISTANCE AVAILABLE?">
+            <ng-template ngbPanelContent>
+              
+              <div>
+                Visitors are always welcome to bring their own motorized wheelchairs.  However, should you need mobility assistance, we do have a limited number of wheelchairs available to use at no additional fee. The National D-Day Memorial is 100% wheelchair accessible.
+              </div>
+
+              <div>
+                Shuttle carts may be available for an additional fee.  Shuttle carts are generally operated by volunteer guides, and the availability of these carts is based on the number of volunteer guides on assignment daily. If our volunteer assignment roster is well-staffed, it is more likely we will have carts available. If not, then only wheelchairs may be available.
+              </div>
+
+              <!-- <div>
+                Please inquire at the D-Day ticketing kiosk located inside the Bedford Area Welcome Center about shuttle cart or wheelchair availability.
+              </div> -->
+
+            </ng-template>
+          </ngb-panel>
+        </ngb-accordion>
+      </div>
+
+    </div>
+        
+    <div *ngSwitchCase="'policies'" class="policiesCon">
+
+      <div class="policiesContent" padding>
+
+        <div id="policiesHeader">
+            <i>Please take into consideration the sensitive and emotional nature of the Memorial by adhering to the following site rules:</i>
+        </div>
+        
+          
+        <ul>
+          <li>
+            Please take special care to watch children. Running, climbing, and yelling are not appropriate.
+          </li>
+
+          <li>
+            Wading, playing, or throwing objects into the reflection pool is strictly prohibited.
+          </li>
+
+          <li>
+            No eating, drinking (with the exception of water), or smoking while on monument grounds. <!-- There are several tables on the deck of the Memorial’s gift store, however, these are not always available. For picnicing, the Bedford Welcome Center has a patio area with tables that are accessible 9 a.m. – 5 p.m. and for additional options, Liberty Lake Park is within 1/2 mile of the monument and Falling Creek Park is also a short driving distance away.-->
+            Tables are located inside the Memorial’s pavilion, but are sometimes unavailable due to special events.
+          </li>
+
+          <li>
+            No firearms
+          </li>
+
+          <li>
+            No drones
+          </li>
+          
+          <li>
+            No alcohol
+          </li>
+
+          <li>
+            Visitors are permitted to take pictures on the Memorial site with the understanding that they are not to be sold or used commercially without the express written permission of the National D-Day Memorial Foundation.
+          </li>
+
+          <li>
+              Animals: With the exception of licensed guide dogs, no animals are permitted within the monument’s perimeter. The Memorial has a kennel area to place pets while visiting the site. Inquire with the ticketing agent for more information.
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+</ion-content>

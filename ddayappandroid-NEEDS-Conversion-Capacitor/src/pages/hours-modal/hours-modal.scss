@@ -1,0 +1,41 @@
+page-hours-modal {
+    @media (min-width: 768px) and (min-height: 768px) {
+        .hoursCon h4, .hoursCon h3, .hoursCon div {
+            font-size: 2.7rem!important;
+        }
+    }
+
+    .hoursCon {
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        background-color: white;
+    }
+
+    .hoursCon div {
+        margin: 10px 20px;
+    }
+
+    .hoursInfo {
+        border-bottom: 1px solid black;
+    }
+
+    .hoursCon h4 {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 15px;
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+        margin-top: 25px!important;
+    }
+
+    .hoursCon h3 {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+        margin-top: 25px!important;
+    }
+}

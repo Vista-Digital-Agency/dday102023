@@ -1,0 +1,7 @@
+{
+  "name": "ddayapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "ionic-angular"
+}

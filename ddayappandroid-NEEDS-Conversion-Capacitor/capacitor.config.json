@@ -1,0 +1,28 @@
+{
+  "appId": "com.ddaymuseum.vista",
+  "appName": "National D-Day Memorial",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {
+    "preferences": {
+      "loadUrlTimeoutValue": "700000",
+      "AllowInlineMediaPlayback": "true",
+      "ScrollEnabled": "false",
+      "android-minSdkVersion": "19",
+      "BackupWebStorage": "none",
+      "SplashMaintainAspectRatio": "true",
+      "FadeSplashScreenDuration": "300",
+      "SplashShowOnlyFirstTime": "false",
+      "SplashScreen": "screen",
+      "SplashScreenDelay": "3000",
+      "StatusBarStyle": "blackopaque",
+      "deployment-target": "8.0"
+    }
+  }
+}

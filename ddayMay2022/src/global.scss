@@ -1,0 +1,340 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import "assets/css/bootstrap.min.css";
+
+
+* {
+    font-family: sans-serif;
+}
+
+ion-content.no-scroll {
+    --overflow: hidden;
+}
+
+ion-header ion-toolbar ion-title {
+    --color: white;
+}
+
+.menuHeader img {
+    display: block;
+}
+
+ion-menu ion-header ion-toolbar {
+    --padding-bottom: 0;
+    --padding-end: 0;
+    --padding-start: 0;
+    --padding-top: 0;
+}
+
+@media (min-width: 768px) and (min-height: 768px) {
+    .modal-wrapper {
+        height: 900px!important;
+        top: calc(50% - (900px/2))!important;
+    }
+    
+    .modal-wrapper .con > div {
+        font-size: 3.2rem!important;
+    }
+}
+
+@media only screen and (max-height: 750px) and (orientation: portrait) {
+    ion-footer {
+        display: none;
+    }
+}
+
+@media only screen and (min-height: 750px) and (orientation: portrait) {
+    ion-content {
+        background-color: #2B4453!important;
+    }
+
+    ion-content {
+        margin-bottom: env(safe-area-inset-bottom)!important;
+    }
+}
+
+@media (orientation: landscape) {
+    .menu-inner ion-header ion-toolbar img {
+        display: none!important;
+    }
+
+    .menu-inner .menuHeader {
+        border: none!important;
+    }
+
+    .menu-inner ion-header {
+        border-bottom: 2px solid #bd9e00;
+    }
+    
+}
+
+ion-content {
+    //background-color: rgba(169, 127, 65, 0.904);
+    --background: rgba(169, 127, 65, 0.904) url("/assets/imgs/nice-snow.png") no-repeat center/cover;
+}
+
+.modal-wrapper .bar-buttons ion-button {
+    font-weight: bold!important;
+}
+    
+
+.alert-head, .alert-message {
+    background-color: #2B4453;
+}
+
+.alert-title {
+    color: white;
+}
+
+.alert-sub-title {
+    color: #cccccc!important;
+}
+
+.alert-button .button-inner {
+    color: #2B4453;
+}
+
+.loading-wrapper {
+    display: block!important;
+}
+
+.toolbar-title {
+    color: #cccccc;
+}
+
+ion-toolbar {
+    //background-color: rgb(134, 102, 55);
+    --background: #2B4453;;
+}
+
+.bar-button {
+    color: white;
+}
+
+ion-menu ion-header {
+    border-bottom: 2px solid #bd9e00;
+}
+
+ion-menu ion-content {
+    background-color: #263744;
+    background-image: none;
+    border-bottom: 2px solid #bd9e00;
+}
+
+ion-menu .list {
+    background-color: #2B4453;
+    margin-bottom: 0px!important;
+}
+
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: none;
+}
+
+ion-menu ion-item {
+    //background-color: transparent;
+    --background: #263744;
+    padding-left: 0px;
+    --border-width: 0.55px;
+    --border-color: #a2a2a2;
+}
+
+ion-menu ion-item:last {
+    --border-width: 0;
+}
+
+ion-menu ion-item ion-label {
+    --color: #cccccc!important;
+}
+
+ion-menu .item-inner {
+    //background-image: none!important;
+    //padding-right: 0px!important;
+    //border-bottom: 0.55px solid #a2a2a2!important;
+}
+
+.menu-inner .item-block:last-child .item-inner {
+    border-bottom: 0px!important;
+}
+
+.menu-inner .item .label {
+    margin: 15px 8px 15px 16px;
+    font-size: 2rem;
+}
+
+.modal.scroll-content {
+    background-color: rgba(187, 187, 187, 0.7);
+    background-image: none;
+}
+
+.modal .con {
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    background-color: white;
+}
+
+.modal .con div {
+    margin: 20px 0px;
+}
+
+.modal .con h4 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 25px!important;
+}
+
+.modal .con h3 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 25px!important;
+}
+
+.modal ion-button {
+    background-color: #2B4453!important;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 374px) and (orientation: portrait) {
+    .menu-inner .item .label {
+        font-size: 1.7rem!important;
+    }
+}
+
+@media only screen and (max-width: 400px) and (orientation: portrait) {
+    .menu-inner .item .label {
+        margin: 12px 8px 12px 16px;
+    }
+
+}
+
+
+
+/* EVENT PAGE */
+
+@media (min-width: 768px) and (min-height: 768px) {
+    .input-wrapper ion-label {
+        font-size: 2.7rem!important;
+    }
+}
+
+@media (orientation: landscape) {
+
+    #calCon {
+        max-width: 600px;
+        margin: 0px auto;
+    }
+    
+}
+
+thead tr {
+    background-color: #2B4453;
+    color: white;
+}
+
+@media only screen 
+and (max-device-width : 360px) 
+and (orientation : portrait) { 
+    thead tr th small {
+        font-size: 50%!important;
+    }
+}
+
+tbody {
+    background-color: snow;
+   // --background: snow;
+}
+
+.event-detail-container ion-item {
+    background-color: snow;
+}
+
+//[_ngcontent-c1]
+.monthview-primary-with-event {
+    background-color: rgba(97, 187, 70, 0.90)!important;
+    color: #616161!important;
+}
+
+//[_ngcontent-c1]
+
+.monthview-selected {
+    background-color: #a0a0a7!important;
+    color: white!important;
+}
+
+//[_ngcontent-c1]
+
+.monthview-current {
+    background-color: #616161!important;
+    color: rgb(255, 255, 255)!important;
+}
+
+//.table[_ngcontent-c1] > thead[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1] {
+
+.table > thead > tr > th {
+    border-color: #a0a0a7!important;
+    border-bottom-color: rgb(255, 255, 255)!important;
+}
+
+//[_ngcontent-c1]
+
+.table-bordered {
+    border: 2px solid white!important;
+}
+
+.event-detail-container {
+    margin-top: 10px;
+}
+
+.monthview-eventdetail-timecolumn {
+    display: block;
+    text-align: center;
+}
+
+
+
+.accordion-button:focus {
+    border: none!important;
+    box-shadow: none!important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black!important;
+
+}
+
+.accordion-button:not(.collapsed)::after {
+
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}

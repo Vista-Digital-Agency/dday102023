@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Memorial Wall Name Finder</ion-title>
+  </ion-navbar>
+  
+    <ion-toolbar>
+        <ion-searchbar [(ngModel)]="searchTerm" (search)="getItems($event)"></ion-searchbar>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content no-padding>
+
+  <div *ngIf="showResults">
+  <button ion-item *ngFor="let item of filterData | memorialSearchPipe" (click)="soldierClicked(item)">
+    <ion-avatar item-left *ngIf="item.country != ''">
+      <img src="assets/imgs/flags/usa.png" *ngIf="item.country == 'USA'" onError="this.parentNode.style='display:none';" />
+      <img src="assets/imgs/flags/uk.png" *ngIf="item.country == 'United Kingdom'" onError="this.parentNode.style='display:none';" />
+      <img src="assets/imgs/flags/canada.png" *ngIf="item.country == 'Canada'" onError="this.parentNode.style='display:none';" />
+      <img src="assets/imgs/flags/norway.png" *ngIf="item.country == 'Norway'" onError="this.parentNode.style='display:none';" />
+      <img src="assets/imgs/flags/newZealand.png" *ngIf="item.country == 'New Zealand'" onError="this.parentNode.style='display:none';" />
+      <img src="assets/imgs/flags/france.png" *ngIf="item.country == 'France'" onError="this.parentNode.style='display:none';" />
+      <img src="assets/imgs/flags/belgium.png" *ngIf="item.country == 'Belgium'" onError="this.parentNode.style='display:none';" />
+      <img src="assets/imgs/flags/australia.png" *ngIf="item.country == 'Australia'" onError="this.parentNode.style='display:none';" />
+    </ion-avatar>
+
+    <ion-label>{{ item.first_name }} <div class="searchBtnLbl" *ngIf="item.middle_initial">{{ item.middle_initial }} </div><div class="searchBtnLbl" *ngIf="item.second_middle_initial">{{ item.second_middle_initial }} </div>{{ item.last_name }}<div class="searchBtnLbl" *ngIf="item.suffix"> {{ item.suffix }}</div></ion-label>
+
+  </button> 
+
+</div>
+
+</ion-content>

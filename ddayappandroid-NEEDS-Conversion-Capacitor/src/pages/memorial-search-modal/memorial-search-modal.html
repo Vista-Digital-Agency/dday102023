@@ -1,0 +1,129 @@
+<ion-header no-border>
+    
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button (click)="onClose()">
+        Close
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+ <div class="soldierModalCon">
+   <div class="countryImgCon">
+      <img class="countryImg" src="assets/imgs/flags/{{flag}}" />
+   </div>
+  
+  
+  <ion-grid class="soldierGrid">
+      <ion-row class="soldierRowWrap">
+        <ion-col>
+          <ion-row>
+              <ion-col><h1 class="name">{{ soldier.first_name }} <div class="soldierName" *ngIf="soldier.middle_initial">{{ soldier.middle_initial }} </div><div class="soldierName" *ngIf="soldier.second_middle_initial">{{ soldier.second_middle_initial }} </div>{{ soldier.last_name }}<div class="soldierName" *ngIf="soldier.suffix"> {{ soldier.suffix }}</div></h1></ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row class="soldierRowWrap">
+        <ion-col [class.firstColWrap]="soldier.service_id">
+          <ion-row>
+            <ion-col><h1 class="fieldName">Plaque ID:</h1></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><h1 class="plaqueID">{{ soldier.plaque_id }}</h1></ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col col-6 *ngIf="soldier.service_id">
+          <ion-row>
+            <ion-col><h1 class="fieldName">Service ID:</h1></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col text-center><h1>{{ soldier.service_id }}</h1></ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      
+      <ion-row class="soldierRowWrap">
+        <ion-col>
+          <ion-row>
+            <ion-col><h1 class="fieldName">Country:</h1></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><h1>{{ soldier.country }}</h1></ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row class="soldierRowWrap" *ngIf="soldier.state_province">
+        <ion-col>
+          <ion-row>
+            <ion-col><h1 class="fieldName">State / Province:</h1></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><h1>{{ soldier.state_province }}</h1></ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row class="soldierRowWrap">
+        <ion-col [class.firstColWrap]="soldier.rank" *ngIf="soldier.branch">
+          <ion-row>
+            <ion-col><h1 class="fieldName">Branch:</h1></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><h1>{{ soldier.branch }}</h1></ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col col-6 *ngIf="soldier.rank">
+          <ion-row>
+            <ion-col><h1 class="fieldName">Rank:</h1></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><h1>{{ soldier.rank }}</h1></ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row class="soldierRowWrap" *ngIf="soldier.division">
+        <ion-col>
+          <ion-row>
+            <ion-col><h1 class="fieldName">Division:</h1></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><h1>{{ soldier.division }}</h1></ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row class="soldierRowWrap">
+        <ion-col [class.firstColWrap]="soldier.beach" *ngIf="soldier.unit">
+          <ion-row>
+            <ion-col><h1 class="fieldName">Unit:</h1></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><h1>{{ soldier.unit }}</h1></ion-col>
+          </ion-row>
+        </ion-col>
+        
+      </ion-row>
+      <ion-row class="soldierRowWrap" *ngIf="soldier.beach">
+        <ion-col>
+          <ion-row>
+            <ion-col><h1 class="fieldName">Beach:</h1></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><h1>{{ soldier.beach }}</h1></ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="soldier.burial_place" class="soldierRowWrap">
+        <ion-col>
+          <ion-row>
+            <ion-col><h1 class="fieldName">Burial Place:</h1></ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col><h1>{{ soldier.burial_place }}</h1></ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</div>
+</ion-content>

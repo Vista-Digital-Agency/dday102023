@@ -1,0 +1,52 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Visiting</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col id="purchaseTickets" (click)="openModal(ticketsModal)">
+        <div>
+            <h2><span>Purchase Tickets</span></h2>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col id="hours" (click)="openModal(hoursModal)">
+        <div>
+          <h2><span>Memorial Hours</span></h2>
+        </div>
+      </ion-col>
+    </ion-row>
+    <!-- <ion-row>
+      <ion-col id="group" (click)="openModal(groupModal)">
+        <div>
+          <h2><span>Group Tours</span></h2>
+        </div>
+      </ion-col>
+    </ion-row> -->
+    <ion-row>
+      <ion-col id="fieldTrips" (click)="openFieldTrips()">
+        <div>
+          <h2><span>Field Trips</span></h2>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col id="membership" (click)="openMembership()">
+        <div>
+          <h2><span>Membership</span></h2>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

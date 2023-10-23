@@ -1,0 +1,12 @@
+{
+	"appId": "com.ddaymuseum.vista",
+	"appName": "National D-Day Memorial",
+	"bundledWebRuntime": false,
+	"webDir": "www",
+	"plugins": {
+	  "SplashScreen": {
+		"launchShowDuration": 3000,
+		"launchAutoHide": true
+	  }
+	}
+}

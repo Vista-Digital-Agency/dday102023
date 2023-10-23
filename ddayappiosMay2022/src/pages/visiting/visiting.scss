@@ -1,0 +1,108 @@
+page-visiting {
+
+    @media (min-width: 768px) and (min-height: 768px) {
+        
+        ion-grid {
+            height: 100%!important;
+        }
+
+        ion-row {
+            height: calc(100%/5)!important;
+        }
+        
+        ion-col div {
+            height: 100%!important;
+        }
+
+        ion-col div h2 {
+            font-size: 3.4rem!important;
+        }
+    }
+
+    ion-grid {
+        padding: 0px!important;
+    }
+
+    ion-row {
+        padding: 0px!important;
+    }
+
+    ion-col {
+        padding: 0px!important;
+    }
+
+    ion-col div {
+        height: 150px;
+        text-align: center;
+    }
+
+    #purchaseTickets {
+        background: url('https://www.dday.org/wp-content/uploads/2018/05/default-banner2.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #membership {
+        background: url('https://www.dday.org/wp-content/uploads/2017/02/identification-project.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #group {
+        background: url('https://www.dday.org/wp-content/uploads/2017/02/volunteer-actual.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #fieldTrips {
+        background: url('https://www.dday.org/wp-content/uploads/2017/02/field-trip.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #hours {
+        background: url('https://www.dday.org/wp-content/uploads/2017/03/tourism.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #specialOpenings {
+        background: url('https://www.dday.org/wp-content/uploads/2017/03/luminary2.jpg') no-repeat center center;
+        background-size: cover;
+    }
+
+    #purchaseTickets div {
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+
+    #membership div {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    #group div {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    #fieldTrips div {
+        background-color: rgba(0, 0, 0, 0.25);
+    }
+
+    #hours div {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    #specialOpenings div {
+        background-color: rgba(0, 0, 0, 0.15);
+    }
+
+
+    h2 {
+        margin-top: 0px;
+        color: white!important;
+        position: absolute;
+        text-transform: uppercase;
+        font-weight: bold;
+        top: 40%;
+        width: 100%;
+        z-index: 20;
+    }
+
+    h2 span {
+        border-radius: 25%;
+    }
+}

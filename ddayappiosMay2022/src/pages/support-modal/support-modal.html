@@ -1,0 +1,43 @@
+<ion-header>
+    
+  <ion-navbar>
+    <button ion-button menuToggle  *ngIf="!modal">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Give
+    </ion-title>
+    <ion-buttons end *ngIf="modal">
+      <button ion-button (click)="dismiss()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="modal" padding>
+
+  <div class="con">
+    <img src="./assets/imgs/support.jpg">
+
+    <div>
+        The Memorial does not receive federal or state funding and relies on donations to operate. All proceeds from Gift Shop sales support the Memorial. 
+        You are invited to contribute toward the establishment of facilities that will enable the National D-Day Memorial Foundation to continue to expand 
+        upon the educational initiatives that have been central in the memorialization effort. By supporting the Foundation in telling the D-Day story today 
+        you ensure its retelling tomorrow.
+    </div>
+
+    <div>
+        <h4>National D-Day Memorial Foundation</h4>
+
+        <div>
+          <button color="ddayBlue" full ion-button (click)="website('https://www.dday.org/make-a-donation-online/')">Give</button>
+        </div>
+
+      <p text-center>
+        P.O. Box 77, Bedford, Virginia 24523
+      </p>
+    </div>
+  </div>
+
+</ion-content>

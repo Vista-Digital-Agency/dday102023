@@ -1,0 +1,57 @@
+page-group-modal {
+    @media (min-width: 768px) and (min-height: 768px) {
+        .groupsCon button {
+            font-size: 2.7rem!important;
+        }
+
+        .groupsCon h4 {
+            font-size: 2.7rem!important;
+        }
+
+        .groupsCon h3 {
+            font-size: 2.7rem!important;
+        }
+
+        .groupsCon div {
+            font-size: 2.7rem!important;
+        }
+    }
+
+    .groupsCon {
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        background-color: white;
+    }
+
+    .groupsCon div {
+        margin: 10px 20px;
+    }
+
+    .groupsInfo {
+        border-bottom: 1px solid black;
+    }
+
+    .groupsCon h5 {
+        line-height: 1.8;
+    }
+
+    .groupsCon h4 {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 15px;
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+        margin-top: 25px!important;
+    }
+
+    .groupsCon h3 {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+        margin-top: 25px!important;
+    }
+}

@@ -1,0 +1,33 @@
+page-at-memorial-modal {
+
+    @media (orientation: landscape) {
+        .con {
+            max-width: 500px;
+            margin: 0px auto;
+        }
+    }
+
+    .toolbar-title {
+        white-space: normal;
+    }
+
+    .con {
+        padding: 0px!important;
+    }
+
+    .con img {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .con div {
+        padding: 5px 20px!important;
+        margin-top: 5px!important;
+        margin-bottom: 0px!important;
+    }
+
+    .con div:last-of-type {
+        padding-bottom: 15px!important;
+    }
+}

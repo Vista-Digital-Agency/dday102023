@@ -1,0 +1,41 @@
+page-tickets-modal {
+    @media (min-width: 768px) and (min-height: 768px) {
+        .ticketsCon h3, .ticketsCon h4, .ticketsCon div, .ticketsCon button {
+            font-size: 2.7rem!important;
+        }
+    }
+
+    .ticketsCon {
+        border-radius: 15px;
+        //padding: 10px;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        background-color: white;
+        padding: 10px 0px;
+    }
+
+    .ticketsCon > div {
+        padding: 10px 20px;
+    }
+
+    .ticketsCon > div > div {
+        padding: 5px 0px;
+    }
+
+    .ticketsCon h3 {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+        margin-top: 25px!important;
+    }
+
+    .ticketsCon button {
+        font-weight: 600;
+    }
+
+    .admission {
+        margin-top: 0px!important;
+    }
+}

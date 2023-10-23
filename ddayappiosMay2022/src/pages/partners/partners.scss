@@ -1,0 +1,69 @@
+page-partners {
+    @media (min-width: 768px) and (min-height: 768px) {
+        .card {
+            width: calc(80% - 24px);
+            margin: 20px auto!important;
+        }
+
+        .card-content p {
+            font-size: 3.4rem!important;
+        }
+
+        .card-content button {
+            font-size: 3.4rem!important;
+        }
+    }
+
+    @media (orientation: landscape) {
+        #con {
+            max-width: 500px;
+            margin: 0px auto;
+        }
+
+        .card img {
+            width: 50%;
+            margin: 0px auto;
+        }
+
+        .card-content p {
+            font-size: 2rem;
+        }
+
+        .scroll-content {
+            padding: 0px 16px!important;
+        }
+    }
+
+    .card-header h2 {
+        white-space: normal;
+        color: white;
+        font-weight: bold;
+        padding-top: 10px;
+        line-height: 1.5;
+    }
+
+    .card img {
+        padding: 15px;
+    }
+
+    .card-content {
+        padding: 0px!important;
+    }
+
+    .card-content p {
+        padding: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        color: #000;
+        font-size: 1.7rem;
+        line-height: 1.5;
+    }
+
+    .card-content button {
+        color: #2B4453;
+        font-weight: bold;
+    }
+
+    .card-content .icon {
+        font-size: 1.8em!important;
+    }
+}

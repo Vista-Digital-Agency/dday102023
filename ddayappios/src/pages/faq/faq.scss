@@ -1,0 +1,180 @@
+page-faq {
+
+  @media (min-width: 768px) and (min-height: 768px) {
+    div.card-header a {
+      font-size: 3.2rem!important;
+    }
+
+    .card-body {
+      font-size: 3.2rem!important;
+    }
+
+    .policiesContent li {
+      font-size: 3.2rem!important;
+    }
+
+    #policiesHeader > i {
+      font-size: 3.2rem!important;
+    }
+  }
+
+  @media (orientation: landscape) {
+    .faqCon, .policiesCon {
+        max-width: 600px;
+        margin: 0px auto;
+    }
+  }
+
+    .segment-button {
+        font-weight: bold;
+        font-size: 1.3rem!important;
+        height: 3.2rem!important;
+        line-height: 3rem!important;
+    }
+
+    .policiesContent {
+        border: 1px solid rgb(202, 202, 202);
+        border-radius: 15px;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px!important;
+    }
+
+    .policiesCon {
+        padding: 10px;
+    }
+
+    .policiesCon #policiesHeader {
+      padding: 15px 25px;
+    }
+
+    .faqCon {
+        padding-top: 50px;
+    }
+
+    .faqCon .card-body {
+      padding: 20px;
+    }
+
+    .policiesContent li {
+        margin-bottom: 10px;
+    }
+
+    .faqCon li {
+        margin-bottom: 10px;
+    }
+
+    .card-header.active {
+        border-bottom: 2px solid #cccccc;
+    }
+
+    div.card-header a {
+        display: block;
+        color: #e2e2e2;
+        font-weight: bold;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 1.5;
+    }
+
+    div.card-header a:hover {
+        text-decoration: none;
+    }
+
+    .card {
+        margin-bottom: 25px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border-radius: .25rem;
+      
+        > hr {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      
+        > .list-group:first-child {
+          .list-group-item:first-child {
+            border-top-right-radius: .25rem;
+            border-top-left-radius: .25rem;
+          }
+        }
+      
+        > .list-group:last-child {
+          .list-group-item:last-child {
+            border-bottom-right-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+          }
+        }
+      }
+      
+      .card-body {
+        // Enable `flex-grow: 1` for decks and groups so that card blocks take up
+        // as much space as possible, ensuring footers are aligned to the bottom.
+        flex: 1 1 auto;
+        padding: 10px;
+        font-size: 1.8rem;
+        line-height: 1.7;
+        background-color: rgba(255, 255, 255, 0.7);
+      }
+      
+      .card-title {
+        margin-bottom: .75rem;
+      }
+      
+      .card-subtitle {
+        margin-top: -(.75rem / 2);
+        margin-bottom: 0;
+      }
+      
+      .card-text:last-child {
+        margin-bottom: 0;
+      }
+      
+      .card-link:hover {
+          text-decoration: none;
+        }
+      
+        .card-link {
+          margin-left: 1.25rem;
+        }
+      }
+      
+      //
+      // Optional textual caps
+      //
+      
+      .card-header {
+        text-align: center;
+        background-color: rgb(35, 62, 78);
+        padding: 1.5rem 1.25rem;
+        margin-bottom: 0; // Removes the default margin-bottom of <hN>
+        border-bottom: 1px solid rgba(0, 0, 0, .125);
+      
+        &:first-child {
+         border-radius: calc(#{.25rem} - #{1}) calc(#{.25rem} - #{1}) 0 0;
+        }
+      
+        + .list-group {
+          .list-group-item:first-child {
+            border-top: 0;
+          }
+        }
+      }
+      
+      .card-footer {
+        padding: .75rem 1.25rem;
+        background-color: rgba(0, 0, 0, .03);
+        border-top: 1px solid rgba(0, 0, 0, .125);
+      
+        &:last-child {
+            border-radius: 0 0 calc(#{.25rem} - #{1}) calc(#{.25rem} - #{1});
+        }
+
+}

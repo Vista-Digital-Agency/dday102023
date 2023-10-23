@@ -1,0 +1,30 @@
+page-general-info-modal {
+
+    @media (orientation: landscape) {
+        .con {
+            max-width: 600px;
+            margin: 0px auto;
+        }
+    }
+
+    .con {
+        padding: 0px!important;
+    }
+
+    .con img {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .con div {
+        padding: 10px 20px!important;
+        margin-top: 0px!important;
+        line-height: 1.5;
+        font-size: 1.7rem;
+    }
+
+    .toolbar-title {
+        white-space: normal;
+    }
+}

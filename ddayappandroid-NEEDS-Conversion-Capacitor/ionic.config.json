@@ -1,0 +1,8 @@
+{
+  "name": "dday",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "ionic-angular"
+}

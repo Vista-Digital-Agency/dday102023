@@ -1,0 +1,42 @@
+page-support-modal {
+
+    @media (min-width: 768px) and (min-height: 768px) {
+        .con div > div > button {
+            font-size: 2.8rem!important;
+        }
+    }
+
+    @media (orientation: landscape) {
+        .con {
+            max-width: 500px;
+            margin: 0px auto;
+        }
+    }
+
+    .con {
+        padding: 0px!important;
+    }
+
+    .con img {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .con div {
+        padding: 10px 20px!important;
+        margin-top: 5px!important;
+    }
+
+    .con div:last-of-type {
+        margin-top: 0px!important;
+    }
+
+    .con div:first-of-type {
+        margin-bottom: 0px!important;
+    }
+
+    .modal .con h4 {
+        margin: 0px!important;
+    }
+}

@@ -1,0 +1,58 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Info</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+          <ion-col id="genInfo" (click)="openModal(genInfoModal)">
+            <div>
+                <h2><span>General Information</span></h2>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col id="welcome" (click)="openModal(welcomeModal)">
+            <div>
+              <h2><span>Welcome To D-Day</span></h2>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col id="bedfordBoys" (click)="openModal(bedfordBoysModal)">
+            <div>
+              <h2><span>The "Bedford Boys"</span></h2>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col id="ddayToday" (click)="openModal(ddayTodayModal)">
+            <div>
+              <h2><span>From D-Day To Today</span></h2>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col id="whileAtMemorial" (click)="openModal(atMemorialModal)">
+            <div>
+              <h2><span>While At The National D-Day Memorial</span></h2>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col id="support" (click)="openModal(supportModal)">
+            <div>
+              <h2><span>Give</span></h2>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>

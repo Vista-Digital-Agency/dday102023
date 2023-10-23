@@ -1,0 +1,191 @@
+.no-scroll .scroll-content{
+    overflow: hidden;
+}
+
+@media (min-width: 768px) and (min-height: 768px) {
+    .modal-wrapper {
+        height: 900px!important;
+        top: calc(50% - (900px/2))!important;
+    }
+    
+    .modal-wrapper .con > div {
+        font-size: 3.2rem!important;
+    }
+}
+
+@media only screen and (max-height: 750px) and (orientation: portrait) {
+    ion-footer {
+        display: none;
+    }
+}
+
+@media only screen and (min-height: 750px) and (orientation: portrait) {
+    ion-content {
+        background-color: #2B4453!important;
+    }
+
+    .scroll-content {
+        margin-bottom: env(safe-area-inset-bottom)!important;
+    }
+}
+
+@media (orientation: landscape) {
+    .menu-inner .header .toolbar img {
+        display: none!important;
+    }
+
+    .menu-inner .menuHeader {
+        border: none!important;
+    }
+
+    .menu-inner .header {
+        border-bottom: 2px solid #bd9e00;
+    }
+    
+}
+
+.scroll-content {
+    background-color: rgba(169, 127, 65, 0.904);
+    background-image: url("../assets/imgs/nice-snow.png");
+}
+
+.modal-wrapper .bar-buttons button {
+    font-weight: bold!important;
+}
+    
+
+.alert-head, .alert-message {
+    background-color: #2B4453;
+}
+
+.alert-title {
+    color: white;
+}
+
+.alert-sub-title {
+    color: #cccccc!important;
+}
+
+.alert-button .button-inner {
+    color: #2B4453;
+}
+
+.loading-wrapper {
+    display: block!important;
+}
+
+.toolbar-title {
+    color: #cccccc;
+}
+
+.toolbar-background {
+    //background-color: rgb(134, 102, 55);
+    background-color: #2B4453;;
+}
+
+.bar-button {
+    color: white;
+}
+
+.menu-inner .header .toolbar {
+    padding: 0px!important;
+    //border-bottom: 4px solid #bd9e00;
+    
+}
+
+.menu-inner .header {
+    border-bottom: 2px solid #bd9e00;
+}
+
+.menu-inner .header .toolbar img {
+    display: block;
+}
+
+.menu-inner .scroll-content {
+    background-color: #263744;
+    background-image: none;
+    border-bottom: 2px solid #bd9e00;
+}
+
+.menu-inner .list {
+    background-color: #2B4453;
+    margin-bottom: 0px!important;
+}
+
+.list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: none;
+}
+
+.menu-inner .item {
+    background-color: transparent;
+    color: #cccccc;
+    padding-left: 0px;
+}
+
+.menu-inner .item-inner {
+    background-image: none!important;
+    padding-right: 0px!important;
+    border-bottom: 0.55px solid #a2a2a2!important;
+}
+
+.menu-inner .item-block:last-child .item-inner {
+    border-bottom: 0px!important;
+}
+
+.menu-inner .item .label {
+    margin: 15px 8px 15px 16px;
+    font-size: 2rem;
+}
+
+.modal.scroll-content {
+    background-color: rgba(187, 187, 187, 0.7);
+    background-image: none;
+}
+
+.modal .con {
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    background-color: white;
+}
+
+.modal .con div {
+    margin: 20px 0px;
+}
+
+.modal .con h4 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 25px!important;
+}
+
+.modal .con h3 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 25px!important;
+}
+
+.modal button {
+    background-color: #2B4453!important;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 374px) and (orientation: portrait) {
+    .menu-inner .item .label {
+        font-size: 1.7rem!important;
+    }
+}
+
+@media only screen and (max-width: 400px) and (orientation: portrait) {
+    .menu-inner .item .label {
+        margin: 12px 8px 12px 16px;
+    }
+
+}

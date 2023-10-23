@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "749461112588",
+    "firebase_url": "https://dday-8822d.firebaseio.com",
+    "project_id": "dday-8822d",
+    "storage_bucket": "dday-8822d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749461112588:android:e372f4297bc4081a5beb29",
+        "android_client_info": {
+          "package_name": "com.ddaymuseum.vista"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749461112588-o7mfb5os4uhmss29nisqcutc0rgmcvdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXznZ3pXZPaXpGo6ev03urlXOuw6NqdV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749461112588-o7mfb5os4uhmss29nisqcutc0rgmcvdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

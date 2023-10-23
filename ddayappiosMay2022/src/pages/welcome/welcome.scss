@@ -1,0 +1,47 @@
+page-welcome {
+
+    @media (min-width: 768px) and (min-height: 768px) {
+
+        .card-header {
+            font-size: 3rem!important;
+        }
+
+        .card-content p {
+            font-size: 3rem!important;
+        }
+
+        .card-content button {
+            font-size: 3rem!important;
+        }
+    }
+
+    .card-header {
+        color: white;
+        font-weight: bold;
+        white-space: normal;
+    }
+
+    .card-content {
+        padding: 10px 20px!important;
+    }
+
+    .card-content p {
+        line-height: 1.5;
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #000;
+    }
+
+    .card-content button {
+        font-weight: bold;
+    }
+
+    @media (orientation: landscape) {
+        .welcomeWrapper {
+            max-width: 600px;
+            margin: 0px auto;   
+        }
+    }
+    
+}

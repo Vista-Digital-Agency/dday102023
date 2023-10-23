@@ -1,0 +1,55 @@
+page-homefront-tour-slides {
+
+    @media (min-width: 768px) and (min-height: 768px) {
+        .card-header {
+            font-size: 3.2rem!important;
+        }
+        .card-content p {
+            font-size: 3.2rem!important;
+        }
+    }
+
+    .tourDiv {
+        margin-top: 20px;
+    }
+
+    #pageTitle {
+        background-color: white;
+        margin: 5px 0px 0px 0px!important;
+        padding: 20px 0px;
+    }
+
+    .card-header {
+        color: white;
+        font-weight: bold;
+        white-space: normal;
+    }
+
+    .card-content {
+        padding: 0px!important;
+    }
+
+    #slideStartBtn {
+        background-color: #2B4453!important;
+        font-weight: bold;
+        margin-top: 15px;
+    }
+
+    .slideDiv {
+        height: 100%;
+        background-color: white;
+    }
+
+    .slide-zoom > div {
+        padding: 10px;
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    .card-content p {
+        color: #000;
+        font-size: 1.7rem;
+        line-height: 1.5;
+        padding: 10px 20px!important;
+    }
+}

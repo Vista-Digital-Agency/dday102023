@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="no-scroll">
+
+  <ion-grid id="outerGrid">
+    <ion-row>
+      <ion-col>
+        <ion-grid>
+          <ion-row align-items-start>
+            <video #video1 webkit-playsinline=“webkit-playsinline” playsinline loop></video>
+          </ion-row>
+          <ion-row id="homeBtnsRow">
+            <ion-col col-4>
+              <button ion-button full color="ddayBlue" (click)="openPage(visitingPage)">
+                Visiting
+              </button>
+            </ion-col>
+            <ion-col col-4>
+              <button ion-button full color="ddayBlue" (click)="openPage(mapPage)">
+                Map
+              </button>
+            </ion-col>
+            <ion-col col-4>
+              <button ion-button full color="ddayBlue" (click)="openPage(infoPage)">
+                Information
+              </button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center>
+      <ion-col text-center>
+          <img src="assets/imgs/logo.png" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

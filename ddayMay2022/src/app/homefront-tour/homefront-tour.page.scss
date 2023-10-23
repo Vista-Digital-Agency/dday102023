@@ -1,0 +1,54 @@
+@media (min-width: 768px) and (min-height: 768px) {
+    #homefrontGrid {
+        width: 70%!important;
+    }
+
+    #homefrontGrid img {
+        width: 100%!important;
+    }
+
+    #homefrontGrid ion-button {
+        --font-size: 3.4rem;
+        max-width: 100%!important;
+        width: 100%!important;
+    }
+}
+
+@media (orientation: landscape) {
+    #homefrontGrid {
+        max-width: 500px;
+        margin: 0px auto;
+        background-color: rgba(235, 235, 235, 0.4);
+    }
+
+    #homefrontGrid > ion-row:first-of-type > ion-col:first-of-type > img:last-of-type {
+        display: none;
+    }
+}
+
+#homefrontGrid {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 0px!important;
+}
+
+#homefrontGrid ion-row:first-of-type {
+    padding: 0px!important;
+    margin-bottom: 10px;
+}
+
+#homefrontGrid ion-row:first-of-type ion-col {
+    padding: 0px!important;
+}
+
+#homefrontGrid img {
+    display: block;
+}
+
+#homefrontGrid ion-button {
+    --background: #2B4453!important;
+    font-weight: bold;
+    width: 90%;
+    max-width: 370px;
+    padding: 0px!important;
+    margin: 4px auto!important;
+}

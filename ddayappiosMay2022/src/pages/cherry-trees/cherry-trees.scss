@@ -1,0 +1,86 @@
+page-cherry-trees {
+    .toolbar-title {
+        text-overflow: inherit;
+        white-space: normal;
+    }
+
+    .searchbar {
+        align-items: baseline;
+    }
+
+    .toolbar .searchbar-input {
+    background-color: white!important;
+    height: 3.5rem;
+    }
+
+    .searchbar-input-container {
+    width: 75%;
+    height: 100%;
+    margin: 0px auto;
+    }
+
+    .searchbar-search-icon {
+    top: 10px!important;
+    }
+
+    ion-toolbar .toolbar-background {
+    background-color: #2B4453
+    } 
+
+    .toolbar {
+    padding: 0px;
+    }
+
+    .searchBtnLbl {
+        display: inline;
+    }
+
+    .outerRow, .outerCol {
+        padding: 0px!important;
+    }
+
+    ion-grid {
+        padding: 0px!important;
+    }
+
+    ion-row {
+        background-color: whitesmoke;
+        padding: 10px 5px!important;
+        border-bottom: 0.55px solid #c8c7cc;
+    }
+
+    ion-col {
+        font-size: 1.7rem;
+    }
+
+    ion-row:last-child {
+        border-bottom: 0px!important;
+    }
+
+    #brickHeader {
+        background-color: rgba(28, 61, 78, 0.9);
+        //padding: 0px!important;
+        height: 100%;
+    }
+
+    #brickHeader ion-col {
+        color: #ececec;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    #brickHeader ion-col:first-of-type {
+        padding-left: 10px;
+        //border-right: 1px solid white;
+    }
+
+    .fixed-header{
+        height: 50px;
+        width:100%;
+        z-index: 10;
+    }
+
+    .scroll-content {
+        //margin-top: 138px!important;
+    }
+}

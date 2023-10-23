@@ -1,0 +1,56 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Partners</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div id="con">
+    <ion-card>
+      <ion-card-header>
+        <h2>Virginia WWI and WWII Commemoration Commission</h2>
+      </ion-card-header>
+      <img src="./assets/imgs/ww2.png" />
+      <ion-card-content>
+        <p>
+            The Virginia World War I and World War II Commemoration Commission was created by the General Assembly to plan, develop, 
+            and carry out programs and activities to commemorate the 100th anniversary of World War I and the 75th anniversary of World War II.
+        </p>
+
+        <div class="cardBtnCon" text-center>
+          <button (click)="openWeb('https://www.virginiawwiandwwii.org/')" ion-button clear large icon-start>
+            <ion-icon name='globe'></ion-icon>
+            Website
+          </button>
+        </div>
+        
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <h2>Virginia Is For Lovers</h2>
+      </ion-card-header>
+      <img src="./assets/imgs/vaLovers.png" />
+      <ion-card-content>
+        <p>
+            Nearly 50 years after its creation, “Virginia is for Lovers” continues to be one of the most recognizable and iconic tourism slogans of all time.
+        </p>
+
+        <div class="cardBtnCon" text-center>
+          <button (click)="openWeb('https://www.virginia.org/')" ion-button clear large icon-start>
+            <ion-icon name='globe'></ion-icon>
+            Website
+          </button>
+        </div>
+        
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

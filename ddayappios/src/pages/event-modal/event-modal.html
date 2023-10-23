@@ -1,0 +1,39 @@
+<ion-header>
+  
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button (click)="dismiss()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+  
+  
+  <ion-content>
+    <ion-grid>
+      <ion-row class="titleRow">
+        <ion-col class="titleCon">
+          <h2 [innerHtml]="event.title"></h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col id="eventDescription">
+            <div *ngIf="event.description !== 'undefined'" [innerHtml]="event.description">
+
+            </div>
+          
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+            <div text-center class="calBtn">
+              <button color="ddayBlue" ion-button icon-start (click)="addToCal(event)">
+                <ion-icon name="add-circle"></ion-icon>
+                Add To Calendar
+              </button>
+            </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+   
+  </ion-content>

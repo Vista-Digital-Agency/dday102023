@@ -1,0 +1,85 @@
+page-events {
+
+    @media (min-width: 768px) and (min-height: 768px) {
+        .input-wrapper .label {
+            font-size: 2.7rem!important;
+        }
+    }
+
+    @media (orientation: landscape) {
+        
+        .no-scroll .scroll-content {
+            overflow: scroll;
+        }
+
+        #calCon {
+            max-width: 600px;
+            margin: 0px auto;
+        }
+        
+    }
+
+    thead tr {
+        background-color: #2B4453;
+        color: white;
+    }
+
+    @media only screen 
+    and (max-device-width : 360px) 
+    and (orientation : portrait) { 
+        thead tr th small {
+            font-size: 50%!important;
+        }
+    }
+
+    tbody {
+        background-color: snow;
+    }
+
+    .event-detail-container ion-item {
+        background-color: snow;
+    }
+
+    .monthview-primary-with-event[_ngcontent-c1] {
+        background-color: rgba(97, 187, 70, 0.90);
+        color: #616161;
+    }
+
+    .monthview-selected[_ngcontent-c1] {
+        background-color: #a0a0a7;
+        color: white;
+    }
+
+    .monthview-current[_ngcontent-c1] {
+        background-color: #616161;
+        color: rgb(255, 255, 255);
+    }
+
+    .table[_ngcontent-c1] > thead[_ngcontent-c1] > tr[_ngcontent-c1] > th[_ngcontent-c1] {
+        border-color: #a0a0a7;
+        border-bottom-color: rgb(255, 255, 255);
+    }
+
+    .table-bordered[_ngcontent-c1] {
+        border: 2px solid white;
+    }
+
+    .scroll-content {
+        padding: 10px;
+    }
+    
+    .event-detail-container {
+        margin-top: 10px;
+    }
+
+    #calMonth {
+        text-align: center;
+        color: white;
+        background-color: #2B4453;
+        border: 2px solid white;
+        border-bottom: none!important;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">National D-Day Memorial</string>
+    <string name="title_activity_main">National D-Day Memorial</string>
+    <string name="package_name">com.ddaymuseum.vista</string>
+    <string name="custom_url_scheme">com.ddaymuseum.vista</string>
+</resources>

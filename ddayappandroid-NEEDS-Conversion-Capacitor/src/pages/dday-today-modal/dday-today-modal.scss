@@ -1,0 +1,31 @@
+page-dday-today-modal {
+    @media (orientation: landscape) {
+        .con {
+            max-width: 500px;
+            margin: 0px auto;
+        }
+
+        .scroll-content {
+            padding: 5px!important;
+        }
+    }
+
+    .con {
+        padding: 0px!important;
+    }
+
+    .con img {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .con div {
+        padding: 20px!important;
+        margin-top: 0px!important;
+    }
+
+    .toolbar-title {
+        white-space: normal;
+    }
+}

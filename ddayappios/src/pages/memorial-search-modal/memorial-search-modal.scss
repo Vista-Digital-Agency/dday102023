@@ -1,0 +1,93 @@
+page-memorial-search-modal {
+    .soldierName {
+        display: inline;
+    }
+
+    .countryImg {
+        display: block;
+    }
+
+    .countryImgCon {
+        padding: 0px;
+        border: 2px solid rgba(148, 97, 26, 0.39);
+        border-bottom: 0px;
+        margin: 10px 5px 0px 5px;
+    }
+
+    .bar-button .button-inner {
+        //color: rgb(53, 53, 53);
+        color: rgba(53, 53, 53, 0.95);
+        font-weight: 600;
+        font-size: 2.2rem;
+    }
+
+    .soldierModalCon {
+        background-color: rgba(169, 127, 65, 0.904);
+        background-image: url(../assets/imgs/nice-snow.png);
+        max-width: 600px;
+        margin: 0px auto;
+    }
+
+    .toolbar-background {
+        background-color: rgba(153, 106, 40, 0.904);
+        background-image: url("../assets/imgs/nice-snow.png");
+    }
+
+    h1 {
+        margin: 0px!important;
+    }
+
+    .name {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .fieldName {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .soldierGrid {
+        padding-top: 0px;
+    }
+
+    .soldierGrid .soldierRowWrap:first-child ion-col ion-row ion-col h1{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .firstColWrap {
+        border-right: 2px solid rgba(169, 126, 65, 0.55);
+    }
+
+    .soldierRowWrap {
+        border-bottom: 2px solid rgba(141, 102, 47, 0.55);
+        border-left: 2px solid rgba(121, 90, 47, 0.55);
+        border-right: 2px solid rgba(141, 102, 47, 0.55);
+    }
+
+    .soldierRowWrap:first-of-type {
+        border-top: 2px solid rgba(212, 212, 212, 0.23);
+    }
+
+    .soldierRowWrap > .col {
+        padding: 10px;
+    }
+
+    .fieldName {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .plaqueID {
+        font-weight: 600;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    @media only screen and (max-width: 374px) and (orientation: portrait) {
+        h1 {
+            font-size: 2rem!important;
+        }
+    }
+}
